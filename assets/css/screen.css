@@ -178,7 +178,11 @@ p, ul, ol, dl {
     -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1, 'dlig' 1, 'frac' 1, 'ordn' 1, 'subs' 1;
     -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1, 'dlig' 1, 'frac' 1, 'ordn' 1, 'subs' 1;
     hanging-punctuation: force-end;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
     margin: 0 0 1.75em 0;
+    text-align: justify;
     text-rendering: geometricPrecision;
 }
 
@@ -266,6 +270,9 @@ code, tt {
     border: #E3EDF3 1px solid;
     background: #F7FAFB;
     border-radius: 2px;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
 }
 
 pre {
@@ -281,6 +288,9 @@ pre {
     overflow: auto;
     background: #F7FAFB;
     border-radius: 3px;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
 }
 
 pre code, pre tt {
