@@ -1,5 +1,5 @@
 {
-    "name": "casper",
+    "name": "casper-patched",
     "description": "The default personal blogging theme for Ghost. Beautiful, minimal and responsive.",
     "demo": "https://demo.ghost.io",
     "version": "2.0.3",
@@ -49,5 +49,8 @@
     },
     "config": {
         "posts_per_page": 25
+    },
+    "dependencies": {
+        "gscan": "^1.1.7"
     }
 }
