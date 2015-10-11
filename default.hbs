@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{!-- Styles'n'Scripts --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "built/katex.min.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
 
     {{!-- This tag outputes SEO meta+structured data and other important settings --}}
@@ -58,6 +59,15 @@
     {{!-- jQuery + Fitvids, which makes all video embeds responsive --}}
     <script type="text/javascript" src="{{asset "js/jquery-3.2.1.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+
+    {{!-- KaTeX --}}
+    <script type="text/javascript" src="{{asset "js/katex.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/auto-render.min.js"}}"></script>
+    <script>
+        $(document).ready(function () {
+            window.renderMathInElement(document.body);
+        });
+    </script>
 
     {{#if pagination.pages}}
     <script>
