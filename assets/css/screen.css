@@ -449,6 +449,9 @@ button {
     background: #5ba4e5;
 }
 
+.katex {
+    font-size: 80%;
+}
 
 /* ==========================================================================
    3. Utilities - These things get used a lot
@@ -1811,7 +1814,6 @@ body:not(.post-template) .post-title {
         border-top: rgba(0,0,100,0.06) 1px solid;
         border-left: none;
     }
-
 }
 
 
@@ -2085,6 +2087,9 @@ body:not(.post-template) .post-title {
         width: 100%;
     }
 
+    .katex {
+        font-size: 60%;
+    }
 }
 
 

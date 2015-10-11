@@ -20,6 +20,7 @@
             $("body").toggleClass("nav-opened nav-closed");
         });
 
+        window.renderMathInElement(document.body);
     });
 
     // Arctic Scroll by Paul Adam Davis
