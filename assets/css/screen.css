@@ -380,6 +380,16 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 80%;
 }
 
+img.emojione {
+    display: inline !important;
+    padding: 0 !important;
+    position: initial !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+    width: 3.1ex !important;
+}
+
 
 /* ==========================================================================
    3. Utilities - These things get used a lot
