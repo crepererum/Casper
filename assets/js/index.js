@@ -22,6 +22,10 @@
 
         window.renderMathInElement(document.body);
         $('body').smarten();
+
+        emojione.imageType = "svg";
+        emojione.imagePathSVG = "/assets/svg/";
+        $('body').emojione();
     });
 
     // Arctic Scroll by Paul Adam Davis
@@ -78,6 +82,30 @@
         return function() {
             return this.each(function(){
                 smartenNode(this);
+            });
+        };
+    }());
+
+    jQuery.fn.emojione = (function() {
+        function emojioneNode(node) {
+            if (node.nodeType === 3) {
+                var content_orig = node.data;
+                var content_new = emojione.toImage(content_orig);
+                if (content_orig !== content_new) {
+                    var fragment = document.createRange().createContextualFragment(content_new);
+                    console.log(fragment);
+                    node.parentNode.replaceChild(fragment, node);
+                }
+            } else if (node.nodeType === 1 && ["CODE", "PRE", "TT"].indexOf(node.nodeName) === -1) {
+                if (node = node.firstChild) do {
+                    emojioneNode(node);
+                } while (node = node.nextSibling);
+            }
+        }
+
+        return function() {
+            return this.each(function(){
+                emojioneNode(this);
             });
         };
     }());
