@@ -2192,3 +2192,14 @@ Usage (In Ghost editor):
         margin-left: 0;
     }
 }
+
+img.emojione {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: initial !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+    width: 3.1ex !important;
+}
