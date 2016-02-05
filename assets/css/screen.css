@@ -38,7 +38,7 @@
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Exo 2", "Symbola", sans-serif;
+    font-family: "casper-icons", "Cormorant", "Symbola", sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -98,17 +98,16 @@
 html {
     height: 100%;
     max-height: 100%;
-    font-size: 62.5%;
+    font-size: 75%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Exo 2", "Symbola", serif;
-    letter-spacing: 0.01rem;
-    font-size: 1.8rem;
-    line-height: 1.75em;
+    font-family: "Cormorant", "Symbola", serif;
+    font-size: 1.61rem;
+    line-height: 1.61em;
     color: #3A4145;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
@@ -126,42 +125,40 @@ body {
 
 h1, h2, h3,
 h4, h5, h6 {
-    -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1, 'frac' 1, 'ordn' 1, 'subs' 1;
-    -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1, 'frac' 1, 'ordn' 1, 'subs' 1;
-    -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1, 'frac' 1, 'ordn' 1, 'subs' 1;
+    -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1, 'ordn' 1, 'calt' 1;
+    -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1, 'ordn' 1, 'calt' 1;
+    -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1, 'ordn' 1, 'calt' 1;
     color: #2E2E2E;
-    line-height: 1.15em;
-    margin: 0 0 0.4em 0;
-    font-family: "Exo 2", "Symbola", sans-serif;
+    line-height: 1.61em;
+    margin: 0 0 0.38em 0;
+    font-family: "Cormorant Upright", "Symbola", sans-serif;
     font-weight: 700;
     text-rendering: geometricPrecision;
 }
 
 h1 {
-    font-size: 5rem;
-    letter-spacing: -2px;
+    font-size: 6.85rem;
     text-indent: -3px;
 }
 
 h2 {
-    font-size: 3.6rem;
-    letter-spacing: -1px;
+    font-size: 4.24rem;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2.62rem;
 }
 
 h4 {
-    font-size: 2.5rem;
+    font-size: 1.61rem;
 }
 
 h5 {
-    font-size: 2rem;
+    font-size: 1.61rem;
 }
 
 h6 {
-    font-size: 2rem;
+    font-size: 1.61rem;
 }
 
 a {
@@ -174,14 +171,14 @@ a:hover {
 }
 
 p, ul, ol, dl {
-    -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1, 'dlig' 1, 'frac' 1, 'ordn' 1, 'subs' 1;
-    -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1, 'dlig' 1, 'frac' 1, 'ordn' 1, 'subs' 1;
-    -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1, 'dlig' 1, 'frac' 1, 'ordn' 1, 'subs' 1;
+    -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1, 'dlig' 1, 'ordn' 1, 'calt' 1;
+    -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1, 'dlig' 1, 'ordn' 1, 'calt' 1;
+    -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1, 'dlig' 1, 'ordn' 1, 'calt' 1;
     hanging-punctuation: force-end;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
-    margin: 0 0 1.75em 0;
+    margin: 0 0 2.62rem 0;
     text-align: justify;
     text-rendering: geometricPrecision;
 }
@@ -190,9 +187,14 @@ ol, ul {
     padding-left: 3rem;
 }
 
+p + ul,
+p + ol {
+    margin-top: -1.61rem; // 1.61 - 2.62
+}
+
 ol ol, ul ul,
 ul ol, ol ul {
-    margin: 0 0 0.4em 0;
+    margin: 0 0 0.38em 0;
     padding-left: 2em;
 }
 
@@ -214,7 +216,7 @@ dl dd {
 }
 
 li {
-    margin: 0.4em 0;
+    margin: 0.38em 0;
 }
 
 li li {
@@ -233,9 +235,9 @@ hr {
 blockquote {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.75em 0 1.75em -2.2em;
-    padding: 0 0 0 1.75em;
-    border-left: #4A4A4A 0.4em solid;
+    margin: 2.62rem 0 2.62rem -1.61em;
+    padding: 0 0 0 2.62rem;
+    border-left: #4A4A4A 0.38em solid;
 }
 
 blockquote p {
@@ -281,7 +283,7 @@ code, tt {
 pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 0 0 1.75em 0;
+    margin: 0 0 2.62rem 0;
     border: #E3EDF3 1px solid;
     width: 100%;
     padding: 10px;
@@ -306,7 +308,7 @@ pre code, pre tt {
 
 kbd {
     display: inline-block;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.38em;
     padding: 1px 8px;
     border: #CCC 1px solid;
     color: #666;
@@ -323,7 +325,7 @@ kbd {
 table {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.75em 0;
+    margin: 2.62rem 0;
     width: 100%;
     max-width: 100%;
     background-color: transparent;
@@ -365,7 +367,7 @@ table.plain tbody > tr:nth-child(odd) > th {
 
 iframe, .fluid-width-video-wrapper {
     display: block;
-    margin: 1.75em 0;
+    margin: 2.62rem 0;
 }
 
 /* When a video is inside the fitvids wrapper, drop the
@@ -443,7 +445,7 @@ body.nav-opened .site-wrapper {
     display: table;
     width: 100%;
     height: 100vh;
-    margin-bottom: 5rem;
+    margin-bottom: 6.85rem;
     text-align: center;
     background: #222 no-repeat center center;
     background-size: cover;
@@ -462,7 +464,7 @@ body.nav-opened .site-wrapper {
 
 .main-nav a {
     text-decoration: none;
-    font-family: "Exo 2", "Symbola", sans-serif;
+    font-family: "Cormorant", "Symbola", sans-serif;
 }
 
 /* Navigation */
@@ -637,7 +639,7 @@ body.nav-opened .nav {
     color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
     text-align: center;
     font-size: 12px;
-    font-family: "Exo 2", "Symbola", sans-serif;
+    font-family: "Cormorant", "Symbola", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 35px;
@@ -807,9 +809,8 @@ body.nav-opened .nav {
 .page-title {
     margin: 10px 0 10px 0;
     font-size: 5rem;
-    letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Exo 2", "Symbola", sans-serif;
+    font-family: "Cormorant", "Symbola", sans-serif;
     color: #fff;
 }
 
@@ -818,8 +819,7 @@ body.nav-opened .nav {
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Exo 2", "Symbola", serif;
-    letter-spacing: 0.01rem;
+    font-family: "Cormorant", "Symbola", serif;
     color: rgba(255,255,255,0.8);
 }
 
@@ -899,8 +899,8 @@ body:not(.post-template) .post-title {
 
 .post-meta {
     display: block;
-    margin: 1.75rem 0 0 0;
-    font-family: "Exo 2", "Symbola", sans-serif;
+    margin: 2.62rem 0 0 0;
+    font-family: "Cormorant", "Symbola", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -961,7 +961,7 @@ body:not(.post-template) .post-title {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 4.3rem 0 4rem 0;
+    padding: 4.24rem 0.38rem 0;
     text-align: right;
 }
 
@@ -1071,7 +1071,7 @@ body:not(.post-template) .post-title {
 .post-footer p {
     margin: 1rem 0;
     font-size: 1.4rem;
-    line-height: 1.75em;
+    line-height: 2.62rem;
 }
 
 /* list of author links - location / url */
@@ -1239,7 +1239,6 @@ body:not(.post-template) .post-title {
     line-height: 1.5em;
     font-weight: 200;
     color: #50585D;
-    letter-spacing: 0;
     text-indent: 0;
 }
 
@@ -1249,8 +1248,7 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "Exo 2", "Symbola", sans-serif;
-    letter-spacing: 0.01rem;
+    font-family: "Cormorant", "Symbola", sans-serif;
     font-size: 1.7rem;
 }
 .author-meta span {
@@ -1335,7 +1333,7 @@ body:not(.post-template) .post-title {
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
-    font-family: "Exo 2", "Symbola", sans-serif;
+    font-family: "Cormorant", "Symbola", sans-serif;
     color: rgba(255,255,255,0.8);
     border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 4px;
@@ -1413,7 +1411,7 @@ body:not(.post-template) .post-title {
 
 /* Pastebin */
 .content .embedPastebin {
-    margin-bottom: 1.75em;
+    margin-bottom: 2.62rem;
 }
 
 
@@ -1427,7 +1425,7 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Exo 2", "Symbola", sans-serif;
+    font-family: "Cormorant", "Symbola", sans-serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1511,9 +1509,9 @@ body:not(.post-template) .post-title {
     position: relative;
     margin: 8rem 0 0 0;
     padding: 1rem 15px;
-    font-family: "Exo 2", "Symbola", sans-serif;
+    font-family: "Cormorant", "Symbola", sans-serif;
     font-size: 1rem;
-    line-height: 1.75em;
+    line-height: 2.62rem;
     color: #BBC7CC;
 }
 
@@ -1575,7 +1573,6 @@ body:not(.post-template) .post-title {
 
     .page-title {
         font-size: 4rem;
-        letter-spacing: -1px;
     }
 
     .page-description {
@@ -1789,7 +1786,7 @@ body:not(.post-template) .post-title {
     }
 
     hr {
-        margin: 1.75em 0;
+        margin: 2.62rem 0;
     }
 
     p, ul, ol, dl {
@@ -1816,12 +1813,10 @@ body:not(.post-template) .post-title {
 
     h1 {
         font-size: 2.8rem;
-        letter-spacing: -1px;
     }
 
     h2 {
         font-size: 2.4rem;
-        letter-spacing: 0;
     }
 
     h3 {
@@ -1883,7 +1878,7 @@ body:not(.post-template) .post-title {
     .author-meta li {
         float: none;
         margin: 0;
-        line-height: 1.75em;
+        line-height: 2.62rem;
     }
 
     .author-meta li:before {
