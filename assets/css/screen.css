@@ -2248,3 +2248,8 @@ img.emojione {
     transform: none !important;
     width: 3.1ex !important;
 }
+
+code[class*="language-"], pre[class*="language-"] {
+    background: none !important;
+    border: none !important;
+}
