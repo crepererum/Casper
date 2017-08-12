@@ -2277,3 +2277,21 @@ code[class*="language-"], pre[class*="language-"] {
     background: none !important;
     border: none !important;
 }
+
+.post-full-content p,
+.post-full-content ol,
+.post-full-content ul,
+.post-full-content dl,
+.post-full-comments,
+.footnotes {
+    text-align: justify;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+code, tt, pre {
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+}
